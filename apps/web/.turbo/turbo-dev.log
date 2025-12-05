@@ -1,0 +1,51 @@
+
+> web@1.0.0 dev
+> next dev
+
+[1G[0K [33m[1m⚠[22m[39m Warning: Found multiple lockfiles. Selecting /var/www/html/package-lock.json.
+   Consider removing the lockfiles at:
+   * /var/www/html/pro-1/photographer-marketplace-v2/package-lock.json
+
+   [1m[38;2;173;127;168m▲ Next.js 15.4.6[39m[22m
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.8.75:3000
+   - Environments: .env
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 4.2s
+ [37m[1m○[22m[39m Compiling / ...
+ [31m[1m⨯[22m[39m ./src/app/layout.tsx:5:1
+[31m[1mModule not found[22m[39m: Can't resolve '[32m@/components/layout/Navbar[39m'
+[0m [90m 3 |[39m [36mimport[39m { [33mInter[39m } [36mfrom[39m [32m'next/font/google'[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [32m'./globals.css'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mNavbar[39m [36mfrom[39m [32m'@/components/layout/Navbar'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m
+ [90m 6 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m'@/components/layout/Footer'[39m[33m;[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m'latin'[39m] })[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ [31m[1m⨯[22m[39m ./src/app/layout.tsx:5:1
+[31m[1mModule not found[22m[39m: Can't resolve '[32m@/components/layout/Navbar[39m'
+[0m [90m 3 |[39m [36mimport[39m { [33mInter[39m } [36mfrom[39m [32m'next/font/google'[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [32m'./globals.css'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mNavbar[39m [36mfrom[39m [32m'@/components/layout/Navbar'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m
+ [90m 6 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m'@/components/layout/Footer'[39m[33m;[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m'latin'[39m] })[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ [31m[1m⨯[22m[39m ./src/app/layout.tsx:5:1
+[31m[1mModule not found[22m[39m: Can't resolve '[32m@/components/layout/Navbar[39m'
+[0m [90m 3 |[39m [36mimport[39m { [33mInter[39m } [36mfrom[39m [32m'next/font/google'[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [32m'./globals.css'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mNavbar[39m [36mfrom[39m [32m'@/components/layout/Navbar'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m
+ [90m 6 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m'@/components/layout/Footer'[39m[33m;[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m'latin'[39m] })[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ GET / [31m500[39m in 67ms
+[?25h

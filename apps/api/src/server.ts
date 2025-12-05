@@ -1,5 +1,5 @@
 import express from 'express';
-import cors from 'cors';
+import corsLib from 'cors';
 import helmet from 'helmet';
 import cookieParser from 'cookie-parser';
 import dotenv from 'dotenv';
@@ -7,6 +7,10 @@ import { connectDB } from '@photographer-marketplace/database';
 import { logger } from './utils/logger.js';
 import { errorMiddleware } from './middleware/error.middleware.js';
 import authRoutes from './routes/auth.routes.js';
+import productRoutes from './routes/product.routes.js';
+import cartRoutes from './routes/cart.routes.js';
+import orderRoutes from './routes/order.routes.js';
+import adminRoutes from './routes/admin.routes.js';
 
 dotenv.config();
 
@@ -15,7 +19,7 @@ const PORT = process.env.PORT || 4000;
 
 // Middleware
 app.use(helmet());
-app.use(cors({
+app.use(corsLib({
     origin: process.env.FRONTEND_URL || 'http://localhost:3000',
     credentials: true
 }));
@@ -30,6 +34,10 @@ app.get('/health', (req, res) => {
 
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/product', productRoutes);
+app.use('/api/cart', cartRoutes);
+app.use('/api/orders', orderRoutes);
+app.use('/api/admin', adminRoutes);
 
 // Error handling
 app.use(errorMiddleware);

@@ -1,0 +1,17 @@
+
+> api@1.0.0 dev
+> tsx watch src/server.ts
+
+[1G[0K(node:378012) [MONGOOSE] Warning: Duplicate schema index on {"email":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:378012) [MONGOOSE] Warning: Duplicate schema index on {"user":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+❌ MongoDB Connection Error: Error: querySrv ENOTFOUND _mongodb._tcp.project.mlewuoz.mongodb.net
+[90m    at __node_internal_captureLargerStackTrace (node:internal/errors:496:5)[39m
+[90m    at __node_internal_ (node:internal/errors:715:10)[39m
+[90m    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)[39m {
+  errno: [90mundefined[39m,
+  code: [32m'ENOTFOUND'[39m,
+  syscall: [32m'querySrv'[39m,
+  hostname: [32m'_mongodb._tcp.project.mlewuoz.mongodb.net'[39m
+}
+[31merror[39m: Failed to start server: querySrv ENOTFOUND _mongodb._tcp.project.mlewuoz.mongodb.net {"code":"ENOTFOUND","hostname":"_mongodb._tcp.project.mlewuoz.mongodb.net","stack":"Error: querySrv ENOTFOUND _mongodb._tcp.project.mlewuoz.mongodb.net\n    at __node_internal_captureLargerStackTrace (node:internal/errors:496:5)\n    at __node_internal_ (node:internal/errors:715:10)\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)","syscall":"querySrv","timestamp":"2025-12-05T06:01:01.812Z"}

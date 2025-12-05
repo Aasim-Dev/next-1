@@ -44,7 +44,7 @@ const CartSchema = new Schema({
 });
 
 // Calculate total amount before saving
-CartSchema.pre('save', function(next) {
+CartSchema.pre('save', function (next) {
   this.totalAmount = this.items.reduce((total, item) => {
     return total + (item.price * item.quantity);
   }, 0);
@@ -53,4 +53,5 @@ CartSchema.pre('save', function(next) {
 
 CartSchema.index({ user: 1 });
 
-export default models.Cart || model('Cart', CartSchema);
+const CartModel = mongoose.models.Cart || mongoose.model('Cart', CartSchema);
+export default CartModel;

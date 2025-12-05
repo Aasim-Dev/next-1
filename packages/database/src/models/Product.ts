@@ -77,4 +77,5 @@ ProductSchema.index({ price: 1 });
 ProductSchema.index({ rating: -1 });
 ProductSchema.index({ createdAt: -1 });
 
-export default models.Product || model('Product', ProductSchema);
+const ProductModel = mongoose.models.Product || mongoose.model('Product', ProductSchema);
+export default ProductModel;

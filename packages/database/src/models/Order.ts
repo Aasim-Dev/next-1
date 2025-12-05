@@ -72,7 +72,7 @@ const OrderSchema = new Schema({
 });
 
 // Generate unique order ID
-OrderSchema.pre('save', async function(next) {
+OrderSchema.pre('save', async function (next) {
   if (!this.orderId) {
     const count = await mongoose.model('Order').countDocuments();
     this.orderId = `ORD-${String(count + 1).padStart(6, '0')}`;
@@ -85,4 +85,5 @@ OrderSchema.index({ 'items.seller': 1 });
 OrderSchema.index({ status: 1 });
 OrderSchema.index({ createdAt: -1 });
 
-export default models.Order || model('Order', OrderSchema);
+const OrderModel = mongoose.models.Order || mongoose.model('Order', OrderSchema);
+export default OrderModel;

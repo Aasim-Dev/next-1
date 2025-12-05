@@ -12,15 +12,15 @@ const UserProfileSchema = new Schema({
 const PriceRangeSchema = new Schema({
   min: { type: Number, required: true, min: 0 },
   max: { type: Number, required: true, min: 0 },
-  currency: { 
-    type: String, 
-    enum: ['USD', 'EUR', 'GBP', 'INR'], 
-    default: 'USD' 
+  currency: {
+    type: String,
+    enum: ['USD', 'EUR', 'GBP', 'INR'],
+    default: 'USD'
   },
-  per: { 
-    type: String, 
-    enum: ['hour', 'day', 'event', 'photo'], 
-    default: 'hour' 
+  per: {
+    type: String,
+    enum: ['hour', 'day', 'event', 'photo'],
+    default: 'hour'
   },
 });
 
@@ -40,10 +40,10 @@ const PortfolioItemSchema = new Schema({
   title: { type: String, required: true },
   description: { type: String, required: true },
   imageUrl: { type: String, required: true },
-  category: { 
-    type: String, 
+  category: {
+    type: String,
     enum: ['wedding', 'portrait', 'event', 'commercial', 'fashion', 'landscape', 'street', 'product', 'real-estate', 'headshots'],
-    required: true 
+    required: true
   },
   tags: [String],
   isFeatured: { type: Boolean, default: false },
@@ -100,7 +100,7 @@ const UserSchema = new Schema({
   },
   photographerProfile: {
     type: PhotographerProfileSchema,
-    required: function() {
+    required: function () {
       return this.role === 'seller';
     }
   },
@@ -125,9 +125,9 @@ const UserSchema = new Schema({
 });
 
 // Hash password before saving
-UserSchema.pre('save', async function(next) {
+UserSchema.pre('save', async function (next) {
   if (!this.isModified('password')) return next();
-  
+
   try {
     const salt = await bcrypt.genSalt(12);
     this.password = await bcrypt.hash(this.password, salt);
@@ -138,12 +138,12 @@ UserSchema.pre('save', async function(next) {
 });
 
 // Compare password method
-UserSchema.methods.comparePassword = async function(candidatePassword: string): Promise<boolean> {
+UserSchema.methods.comparePassword = async function (candidatePassword: string): Promise<boolean> {
   return bcrypt.compare(candidatePassword, this.password);
 };
 
 // Remove password from JSON output
-UserSchema.methods.toJSON = function() {
+UserSchema.methods.toJSON = function () {
   const userObject = this.toObject();
   delete userObject.password;
   delete userObject.verificationToken;
@@ -159,4 +159,5 @@ UserSchema.index({ 'photographerProfile.specialties': 1 });
 UserSchema.index({ 'photographerProfile.serviceAreas': 1 });
 UserSchema.index({ 'photographerProfile.rating': -1 });
 
-export default models.User || model('User', UserSchema);
+const UserModel = mongoose.models.User || mongoose.model('User', UserSchema);
+export default UserModel;

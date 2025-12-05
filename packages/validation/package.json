@@ -1,0 +1,13 @@
+{
+    "name": "@photographer-marketplace/validation",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "./src/index.ts",
+    "types": "./src/index.ts",
+    "dependencies": {
+        "yup": "^1.7.0"
+    },
+    "devDependencies": {
+        "typescript": "^5.0.0"
+    }
+}

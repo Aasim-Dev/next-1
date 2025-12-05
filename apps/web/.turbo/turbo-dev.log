@@ -2,50 +2,94 @@
 > web@1.0.0 dev
 > next dev
 
-[1G[0K [33m[1m⚠[22m[39m Warning: Found multiple lockfiles. Selecting /var/www/html/package-lock.json.
-   Consider removing the lockfiles at:
-   * /var/www/html/pro-1/photographer-marketplace-v2/package-lock.json
-
-   [1m[38;2;173;127;168m▲ Next.js 15.4.6[39m[22m
+[1G[0K  [1m[38;2;173;127;168m ▲ Next.js 14.1.0[39m[22m
    - Local:        http://localhost:3000
-   - Network:      http://192.168.8.75:3000
    - Environments: .env
 
- [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 4.2s
+npm error code ENOWORKSPACES
+npm error This command does not support workspaces.
+npm error A complete log of this run can be found in: /home/elsner/.npm/_logs/2025-12-05T09_38_16_242Z-debug-0.log
+ [32m[1m✓[22m[39m Ready in 4.8s
+ [37m[1m○[22m[39m Compiling /buyer/dashboard ...
+ [32m[1m✓[22m[39m Compiled /buyer/dashboard in 17.5s (545 modules)
+ [32m[1m✓[22m[39m Compiled in 1730ms (279 modules)
+ [32m[1m✓[22m[39m Compiled in 1445ms (279 modules)
+ [37m[1m○[22m[39m Compiling /buyer/marketplace ...
+ [32m[1m✓[22m[39m Compiled /buyer/marketplace in 1499ms (545 modules)
+ [37m[1m○[22m[39m Compiling /buyer/cart ...
+ [32m[1m✓[22m[39m Compiled /buyer/cart in 586ms (561 modules)
+ [37m[1m○[22m[39m Compiling /buyer/checkout ...
+ [32m[1m✓[22m[39m Compiled /buyer/checkout in 1120ms (571 modules)
+ [37m[1m○[22m[39m Compiling /not-found ...
+ [32m[1m✓[22m[39m Compiled /not-found in 1025ms (576 modules)
+ [37m[1m○[22m[39m Compiling /login ...
+ [32m[1m✓[22m[39m Compiled /login in 2.7s (585 modules)
  [37m[1m○[22m[39m Compiling / ...
- [31m[1m⨯[22m[39m ./src/app/layout.tsx:5:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32m@/components/layout/Navbar[39m'
-[0m [90m 3 |[39m [36mimport[39m { [33mInter[39m } [36mfrom[39m [32m'next/font/google'[39m[33m;[39m
- [90m 4 |[39m [36mimport[39m [32m'./globals.css'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mNavbar[39m [36mfrom[39m [32m'@/components/layout/Navbar'[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m
- [90m 6 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m'@/components/layout/Footer'[39m[33m;[39m
- [90m 7 |[39m
- [90m 8 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m'latin'[39m] })[33m;[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/layout.tsx:5:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32m@/components/layout/Navbar[39m'
-[0m [90m 3 |[39m [36mimport[39m { [33mInter[39m } [36mfrom[39m [32m'next/font/google'[39m[33m;[39m
- [90m 4 |[39m [36mimport[39m [32m'./globals.css'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mNavbar[39m [36mfrom[39m [32m'@/components/layout/Navbar'[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m
- [90m 6 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m'@/components/layout/Footer'[39m[33m;[39m
- [90m 7 |[39m
- [90m 8 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m'latin'[39m] })[33m;[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- [31m[1m⨯[22m[39m ./src/app/layout.tsx:5:1
-[31m[1mModule not found[22m[39m: Can't resolve '[32m@/components/layout/Navbar[39m'
-[0m [90m 3 |[39m [36mimport[39m { [33mInter[39m } [36mfrom[39m [32m'next/font/google'[39m[33m;[39m
- [90m 4 |[39m [36mimport[39m [32m'./globals.css'[39m[33m;[39m
-[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mNavbar[39m [36mfrom[39m [32m'@/components/layout/Navbar'[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m
- [90m 6 |[39m [36mimport[39m [33mFooter[39m [36mfrom[39m [32m'@/components/layout/Footer'[39m[33m;[39m
- [90m 7 |[39m
- [90m 8 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m'latin'[39m] })[33m;[39m[0m
-
-https://nextjs.org/docs/messages/module-not-found
- GET / [31m500[39m in 67ms
+ [32m[1m✓[22m[39m Compiled / in 1041ms (599 modules)
+ [37m[1m○[22m[39m Compiling /register ...
+ [32m[1m✓[22m[39m Compiled /register in 653ms (605 modules)
+ [37m[1m○[22m[39m Compiling /seller/dashboard ...
+ [32m[1m✓[22m[39m Compiled /seller/dashboard in 2.3s (605 modules)
+ [37m[1m○[22m[39m Compiling /seller/add-product ...
+ [32m[1m✓[22m[39m Compiled /seller/add-product in 1095ms (606 modules)
+ [37m[1m○[22m[39m Compiling /not-found ...
+ [32m[1m✓[22m[39m Compiled /not-found in 1165ms (597 modules)
+ [31m[1m⨯[22m[39m Error: Cannot find module './359.js'
+Require stack:
+- /var/www/html/pro-1/photographer-marketplace-v2/apps/web/.next/server/webpack-runtime.js
+- /var/www/html/pro-1/photographer-marketplace-v2/apps/web/.next/server/app/not-found.js
+- /var/www/html/pro-1/photographer-marketplace-v2/node_modules/next/dist/server/require.js
+- /var/www/html/pro-1/photographer-marketplace-v2/node_modules/next/dist/server/load-components.js
+- /var/www/html/pro-1/photographer-marketplace-v2/node_modules/next/dist/build/utils.js
+- /var/www/html/pro-1/photographer-marketplace-v2/node_modules/next/dist/server/dev/hot-middleware.js
+- /var/www/html/pro-1/photographer-marketplace-v2/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /var/www/html/pro-1/photographer-marketplace-v2/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /var/www/html/pro-1/photographer-marketplace-v2/node_modules/next/dist/server/lib/router-server.js
+- /var/www/html/pro-1/photographer-marketplace-v2/node_modules/next/dist/server/lib/start-server.js
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)[39m
+    at /var/www/html/pro-1/photographer-marketplace-v2/node_modules/[4mnext[24m/dist/server/require-hook.js:55:36
+[90m    at Module._load (node:internal/modules/cjs/loader:981:27)[39m
+[90m    at Module.require (node:internal/modules/cjs/loader:1231:19)[39m
+    at mod.require (/var/www/html/pro-1/photographer-marketplace-v2/node_modules/[4mnext[24m/dist/server/require-hook.js:65:28)
+[90m    at require (node:internal/modules/helpers:177:18)[39m
+    at __webpack_require__.f.require [90m(/var/www/html/pro-1/photographer-marketplace-v2/apps/web/[39m.next/server/webpack-runtime.js:198:28[90m)[39m
+    at [90m/var/www/html/pro-1/photographer-marketplace-v2/apps/web/[39m.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e [90m(/var/www/html/pro-1/photographer-marketplace-v2/apps/web/[39m.next/server/webpack-runtime.js:110:67[90m)[39m
+    at Array.map (<anonymous>)
+    at __webpack_require__.X [90m(/var/www/html/pro-1/photographer-marketplace-v2/apps/web/[39m.next/server/webpack-runtime.js:162:22[90m)[39m
+    at [90m/var/www/html/pro-1/photographer-marketplace-v2/apps/web/[39m.next/server/app/seller/add-product/page.js:1:16416
+    at Object.<anonymous> [90m(/var/www/html/pro-1/photographer-marketplace-v2/apps/web/[39m.next/server/app/seller/add-product/page.js:1:16461[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1364:14)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1203:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:1019:12)[39m
+[90m    at Module.require (node:internal/modules/cjs/loader:1231:19)[39m
+    at mod.require (/var/www/html/pro-1/photographer-marketplace-v2/node_modules/[4mnext[24m/dist/server/require-hook.js:65:28)
+[90m    at require (node:internal/modules/helpers:177:18)[39m
+    at requirePage (/var/www/html/pro-1/photographer-marketplace-v2/node_modules/[4mnext[24m/dist/server/require.js:109:84)
+    at /var/www/html/pro-1/photographer-marketplace-v2/node_modules/[4mnext[24m/dist/server/load-components.js:74:84
+    at async loadComponentsImpl (/var/www/html/pro-1/photographer-marketplace-v2/node_modules/[4mnext[24m/dist/server/load-components.js:74:26)
+    at async DevServer.findPageComponentsImpl (/var/www/html/pro-1/photographer-marketplace-v2/node_modules/[4mnext[24m/dist/server/next-server.js:675:36) {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: [
+    [32m'/var/www/html/pro-1/photographer-marketplace-v2/apps/web/.next/server/webpack-runtime.js'[39m,
+    [32m'/var/www/html/pro-1/photographer-marketplace-v2/apps/web/.next/server/app/not-found.js'[39m,
+    [32m'/var/www/html/pro-1/photographer-marketplace-v2/node_modules/next/dist/server/require.js'[39m,
+    [32m'/var/www/html/pro-1/photographer-marketplace-v2/node_modules/next/dist/server/load-components.js'[39m,
+    [32m'/var/www/html/pro-1/photographer-marketplace-v2/node_modules/next/dist/build/utils.js'[39m,
+    [32m'/var/www/html/pro-1/photographer-marketplace-v2/node_modules/next/dist/server/dev/hot-middleware.js'[39m,
+    [32m'/var/www/html/pro-1/photographer-marketplace-v2/node_modules/next/dist/server/dev/hot-reloader-webpack.js'[39m,
+    [32m'/var/www/html/pro-1/photographer-marketplace-v2/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js'[39m,
+    [32m'/var/www/html/pro-1/photographer-marketplace-v2/node_modules/next/dist/server/lib/router-server.js'[39m,
+    [32m'/var/www/html/pro-1/photographer-marketplace-v2/node_modules/next/dist/server/lib/start-server.js'[39m
+  ],
+  page: [32m'/seller/add-product'[39m
+}
+ [37m[1m○[22m[39m Compiling /_error ...
+ [32m[1m✓[22m[39m Compiled /_error in 4.4s (767 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 4.2s (778 modules)
+ [37m[1m○[22m[39m Compiling /not-found ...
+ [32m[1m✓[22m[39m Compiled /not-found in 734ms (332 modules)
 [?25h

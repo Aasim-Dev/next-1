@@ -1,8 +1,8 @@
 {
     "compilerOptions": {
         "target": "ES2020",
-        "module": "ESNext",
-        "moduleResolution": "bundler",
+        "module": "Node16",
+        "moduleResolution": "node16",
         "lib": [
             "ES2020"
         ],
@@ -16,13 +16,20 @@
         "allowSyntheticDefaultImports": true,
         "types": [
             "node"
-        ]
+        ],
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        }
     },
     "include": [
         "src/**/*"
     ],
     "exclude": [
         "node_modules",
-        "dist"
+        "dist",
+        "src/routes/**/route.ts",
+        "src/routes/*/route.ts"
     ]
 }

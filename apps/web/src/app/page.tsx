@@ -59,7 +59,7 @@ export default function HomePage() {
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               Find and hire talented photographers for your special events, portraits, and commercial projects. Join our community of photography professionals.
             </p>
-            
+
             {/* Dynamic CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               {!loading && (
@@ -286,7 +286,7 @@ export default function HomePage() {
             Ready to Get Started?
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            {user 
+            {user
               ? `Welcome back, ${user.name}! Continue managing your account.`
               : "Join thousands of photographers and clients on PhotoHire today"
             }

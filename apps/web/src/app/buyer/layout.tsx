@@ -4,8 +4,8 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { 
-  Home, ShoppingBag, ShoppingCart, 
+import {
+  Home, ShoppingBag, ShoppingCart,
   Settings, LogOut, Menu, X, Store
 } from "lucide-react";
 import { CartProvider, useCart } from "@/context/CartContext";
@@ -29,7 +29,7 @@ function BuyerLayoutContent({ children }: { children: React.ReactNode }) {
       try {
         const res = await fetch("/api/auth/me", {
           method: "GET",
-          credentials: "include",  
+          credentials: "include",
         });
         if (!res.ok) {
           router.push("/login");

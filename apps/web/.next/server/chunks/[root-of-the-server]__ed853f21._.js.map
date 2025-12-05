@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 66, "column": 0}, "map": {"version":3,"sources":["file:///var/www/html/pro-1/photographer-platform/src/app/api/auth/logout/route.ts"],"sourcesContent":["import { NextResponse } from 'next/server';\n\nexport async function POST() {\n  const response = NextResponse.json(\n    { success: true, message: 'Logout successful' },\n    { status: 200 }\n  );\n  \n  // Clear the authentication cookie\n  response.cookies.set('token', '', {\n    httpOnly: true,\n    secure: process.env.NODE_ENV === 'production',\n    sameSite: 'lax',\n    maxAge: 0,\n    path: '/',\n  });\n  \n  return response;\n}"],"names":[],"mappings":";;;AAAA;;AAEO,eAAe;IACpB,MAAM,WAAW,gIAAA,CAAA,eAAY,CAAC,IAAI,CAChC;QAAE,SAAS;QAAM,SAAS;IAAoB,GAC9C;QAAE,QAAQ;IAAI;IAGhB,kCAAkC;IAClC,SAAS,OAAO,CAAC,GAAG,CAAC,SAAS,IAAI;QAChC,UAAU;QACV,QAAQ,oDAAyB;QACjC,UAAU;QACV,QAAQ;QACR,MAAM;IACR;IAEA,OAAO;AACT","debugId":null}}]
-}

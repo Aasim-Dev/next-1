@@ -4,8 +4,12 @@ import { authenticate, authorize } from '../middleware/auth.middleware.js';
 
 const router = Router();
 
-router.get('/stats', authenticate, authorize('admin'), adminController.getStats);
-router.get('/buyers', authenticate, authorize('admin'), adminController.getBuyers);
-router.get('/sellers', authenticate, authorize('admin'), adminController.getSellers);
+// All admin routes require authentication and admin role
+router.use(authenticate);
+router.use(authorize('admin'));
+
+router.get('/stats', adminController.getStats);
+router.get('/buyers', adminController.getBuyers);
+router.get('/sellers', adminController.getSellers);
 
 export default router;
